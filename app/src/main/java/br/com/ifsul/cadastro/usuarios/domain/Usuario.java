@@ -1,4 +1,4 @@
-package br.com.ifsul.cadrasto.usuarios.domain;
+package br.com.ifsul.cadastro.usuarios.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -12,7 +12,6 @@ import static java.lang.String.format;
 
 @Data
 @Builder
-@AllArgsConstructor
 public final class Usuario implements Serializable {
 
     private static final long serialVersionUID = -7800660453018639622L;

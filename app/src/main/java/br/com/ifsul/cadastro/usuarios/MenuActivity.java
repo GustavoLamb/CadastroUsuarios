@@ -1,4 +1,4 @@
-package br.com.ifsul.cadrasto.usuarios;
+package br.com.ifsul.cadastro.usuarios;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import br.com.ifsul.cadrasto.usuarios.domain.Usuario;
+import br.com.ifsul.cadastro.usuarios.domain.Usuario;
 
 public class MenuActivity extends ListActivity {
 

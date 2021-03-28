@@ -1,11 +1,11 @@
-package br.com.ifsul.cadrasto.usuarios;
+package br.com.ifsul.cadastro.usuarios;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import br.com.ifsul.cadrasto.usuarios.domain.Usuario;
+import br.com.ifsul.cadastro.usuarios.domain.Usuario;
 
 import static android.widget.Toast.LENGTH_SHORT;
 import static java.lang.String.format;

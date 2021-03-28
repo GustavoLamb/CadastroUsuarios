@@ -1,4 +1,4 @@
-package br.com.ifsul.cadrasto.usuarios;
+package br.com.ifsul.cadastro.usuarios;
 
 import android.content.Context;
 

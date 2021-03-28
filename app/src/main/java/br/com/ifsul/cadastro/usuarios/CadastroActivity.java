@@ -1,4 +1,4 @@
-package br.com.ifsul.cadrasto.usuarios;
+package br.com.ifsul.cadastro.usuarios;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,11 +28,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.ifsul.cadrasto.usuarios.domain.Usuario;
+import br.com.ifsul.cadastro.usuarios.domain.Usuario;
 
 import static android.widget.Toast.LENGTH_SHORT;
-import static br.com.ifsul.cadrasto.usuarios.domain.Genero.FEMININO;
-import static br.com.ifsul.cadrasto.usuarios.domain.Genero.MASCULINO;
+import static br.com.ifsul.cadastro.usuarios.domain.Genero.FEMININO;
+import static br.com.ifsul.cadastro.usuarios.domain.Genero.MASCULINO;
 import static java.lang.String.format;
 import static java.time.format.DateTimeFormatter.ofPattern;
 

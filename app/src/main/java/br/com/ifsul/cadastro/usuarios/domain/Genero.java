@@ -1,4 +1,4 @@
-package br.com.ifsul.cadrasto.usuarios.domain;
+package br.com.ifsul.cadastro.usuarios.domain;
 
 public enum Genero {
     MASCULINO, FEMININO
