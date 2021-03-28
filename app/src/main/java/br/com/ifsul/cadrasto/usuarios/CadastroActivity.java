@@ -1,5 +1,6 @@
 package br.com.ifsul.cadrasto.usuarios;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,8 @@ import static java.time.format.DateTimeFormatter.ofPattern;
 
 public class CadastroActivity extends AppCompatActivity implements ValidationListener {
 
-    private static final List<Usuario> USUARIOS_CADASTRARDOS = new ArrayList<>();
+    private static final ArrayList<Usuario> USUARIOS_CADASTRARDOS = new ArrayList<>();
+    private static final String EXTRA_LIST = "usuarios_list";
 
     private TextInputLayout txtNome;
     private TextInputLayout txtEmail;
@@ -78,6 +80,16 @@ public class CadastroActivity extends AppCompatActivity implements ValidationLis
         incializarComponentes();
 
         btCadastrar.setOnClickListener(view -> validator.validate());
+        btEnviar.setOnClickListener(view -> {
+            if (!USUARIOS_CADASTRARDOS.isEmpty()) {
+                final Intent menuIntent = new Intent(this, MenuActivity.class);
+                menuIntent.putExtra(EXTRA_LIST, USUARIOS_CADASTRARDOS);
+                startActivity(menuIntent);
+                finish();
+            } else {
+                Toast.makeText(this, "Cadastre algum usuário primeiro", LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void incializarComponentes() {
